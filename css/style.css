@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    display: flex;
+    height: 85px;
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+    background-image: url("../assets/nav-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid black;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 20%;
+}
+
+.nav-bar ul li {
+    padding-right: 20%;
+    /*list-style-image: url("../assets/points.jpg");*/
+    list-style: square;
+    color: #ffff;
+}
+
+.nav-bar ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-bar ul li a:hover{
+    color: hotpink;
+    text-decoration: underline;
+    transition: 1s;
+    border-radius: 1px;
+}
+
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 900px;
+    height: 530px;
+    margin-top: 3%;
+    position: relative;
+    left: 20%;
+    border-radius: 25px;
+}
+
+#photo {
+    width: 450px;
+    height: 530px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo img{
+    width: 300px;
+    height: 410px;
+}
+
+#photo img:hover{
+    border: solid 3px #ffff;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#desc {
+    width: 450px;
+    height: 530px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#desc h1 {
+    color: #ffff;
+    font-weight: bold;
+    position: relative;
+    right: 10%;
+    bottom: 10%;
+}
+
+#desc p {
+    color: #ffff;
+    text-align: center;
+    position: relative;
+    right: 10%;
+    bottom: 5%;
+}
+
+#line {
+    background-color: #ffff;
+    width: 400px;
+    height: 2px;
+    position: relative;
+    bottom: 15%;
+    right: 10%;
+}
+
+#line-2 {
+    background-color: #ffff;
+    width: 400px;
+    height: 2px;
+    position: relative;
+    right: 10%;
+}
+
+#city {
+    color: #ffff;
+    /*text-decoration: none;*/
+    font-weight: bold;
+    text-decoration: underline;
+}
+#city:hover{
+    color: hotpink;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 2%;
+}
+
+footer a:hover{
+    color: hotpink;
+    text-decoration: underline;
+    transition: 1s;
+    border-radius: 1px;
+}

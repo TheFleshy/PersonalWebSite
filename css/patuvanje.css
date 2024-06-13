@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    display: flex;
+    height: 85px;
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+    background-image: url("../assets/nav-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid black;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 20%;
+}
+
+.nav-bar ul li {
+    padding-right: 20%;
+    /*list-style-image: url("../assets/points.jpg");*/
+    list-style: square;
+    color: #ffff;
+}
+
+.nav-bar ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-bar ul li a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    transition: 1s;
+    border-radius: 1px;
+}
+
+.service-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    width: 30%;
+    height: 300px;
+    left: 15%;
+    top: 15px;
+    border-radius: 25px;
+}
+
+.service-icon {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.service-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -ms-transform: translateY(110px) rotateX(-90deg);
+    transform: translateY(110px) rotateX(-90deg);
+}
+
+.service-box .service-icon .front-content {
+    position: relative;
+    top: 80px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.service-box .service-icon .front-content i {
+    font-size: 28px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.service-box .service-icon .front-content h3 {
+    position: relative;
+    top: 45px;
+    right: 3%;
+    display: inline-block;
+    font-size: 30px;
+    color: #ffffff;
+    border: 3px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.service-box .service-content h3 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    right: 20px;
+}
+
+.service-box .service-content p {
+    font-size: 13px;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    right: 20px;
+    top: 35%;
+}
+
+.yellow {
+    background-image: url("../assets/greece.jpg");
+    background-size: cover;
+}
+
+.orange {
+    background-image: url("../assets/serbia.jpg");
+    background-size: cover;
+}
+
+.red {
+    background-image: url("../assets/venecija.jpg");
+    background-size: cover;
+}
+
+.grey {
+    background-image: url("../assets/milano.jpeg");
+    background-size: cover;
+}
+
+.service-box:hover .service-icon {
+    opacity: 0;
+    -ms-transform: translateY(-110px) rotateX(90deg);
+    transform: translateY(-110px) rotateX(90deg);
+}
+
+.service-box:hover .service-content {
+    opacity: 1;
+    /*-webkit-transform: rotateX(0);*/
+    /*-moz-transform: rotateX(0);*/
+    -ms-transform: rotateX(0);
+    /*-o-transform: rotateX(0);*/
+    transform: rotateX(0);
+}
+
+body > div.main-section > div:nth-child(2){
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    width: 30%;
+    height: 300px;
+    left: 15%;
+    top: 15px;
+    border-radius: 25px;
+}
+
+body > div.main-section > div:nth-child(3) {
+    position: relative;
+    overflow: hidden;
+    -webkit-perspective: 1000px;
+    width: 30%;
+    height: 300px;
+    left: 50%;
+    top: -605px;
+    border-radius: 25px;
+}
+
+body > div.main-section > div:nth-child(4) {
+    position: relative;
+    overflow: hidden;
+    -webkit-perspective: 1000px;
+    width: 30%;
+    height: 300px;
+    left: 50%;
+    top: -605px;
+    border-radius: 25px;
+}
+
+.main-section {
+    margin: 0;
+    height: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 2%;
+    top: 500px;
+}
+
+footer a:hover{
+    color: hotpink;
+    text-decoration: underline;
+    transition: 1s;
+    border-radius: 1px;
+}
